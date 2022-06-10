@@ -37,6 +37,8 @@ route::get('/', [HomeController::class,'index']);
 
 route::get('/search', [HomeController::class,'search']);
 
+route::post('/addcart/{id}', [HomeController::class,'addcart']);
+
 route::get('/product', [AdminController::class,'product']);
 
 route::post('/uploadproduct', [AdminController::class,'uploadproduct']);
