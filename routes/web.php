@@ -39,6 +39,8 @@ route::get('/search', [HomeController::class,'search']);
 
 route::get('/showcart', [HomeController::class,'showcart']);
 
+route::post('/order', [HomeController::class,'confirmorder']);
+
 route::get('/delete/{id}', [HomeController::class,'deletecart']);
 
 route::post('/addcart/{id}', [HomeController::class,'addcart']);
