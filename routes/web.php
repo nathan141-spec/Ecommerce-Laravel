@@ -57,3 +57,7 @@ route::get('/updateview/{id}', [AdminController::class,'updateview']);
 
 route::post('/updateproduct/{id}', [AdminController::class,'updateproduct']);
 
+route::get('/showorder', [AdminController::class,'showorder']);
+
+route::get('/updatestatus/{id}', [AdminController::class,'updatestatus']);
+
