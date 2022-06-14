@@ -30,6 +30,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+// Home Controller
 
 route::get('/redirect', [HomeController::class,'redirect']);
 
@@ -44,6 +45,8 @@ route::post('/order', [HomeController::class,'confirmorder']);
 route::get('/delete/{id}', [HomeController::class,'deletecart']);
 
 route::post('/addcart/{id}', [HomeController::class,'addcart']);
+
+// Admin Controller
 
 route::get('/product', [AdminController::class,'product']);
 
